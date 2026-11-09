@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#100d10"><meta name="description" content="CARMARÉ, tu espacio personal de organización y progreso.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg"><title>CARMARÉ</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+<header class="topbar"><div class="brand"><div class="brand-mark">C</div><div><div class="brand-name">CARMARÉ</div><div class="brand-sub">TU ESPACIO. TU PROGRESO.</div></div></div><button class="icon-btn" id="themeBtn" aria-label="Cambiar tema">☼</button></header>
+<main id="view" class="view"></main>
+<nav class="bottom-nav" id="nav">
+<button data-page="inicio" class="active"><span>⌂</span>Inicio</button><button data-page="ahorros"><span>◇</span>Ahorros</button><button data-page="estudios"><span>▤</span>Estudios</button><button data-page="agenda"><span>▦</span>Agenda</button><button data-page="mas"><span>•••</span>Más</button>
+</nav>
+</div>
+<div id="toast" class="toast"></div>
+<dialog id="modal"><form method="dialog" id="modalForm"><div class="modal-head"><h3 id="modalTitle">Nuevo registro</h3><button class="icon-btn" value="cancel">×</button></div><div id="modalBody"></div><div class="modal-actions"><button class="btn ghost" value="cancel">Cancelar</button><button class="btn primary" id="saveModal" value="default">Guardar</button></div></form></dialog>
+<script src="app.js"></script>
+</body></html>
